@@ -14,12 +14,12 @@ st.set_page_config(
 )
 import os
 
-logo_path = "logo.png"
+logo_path = "logo.png.png"
 
 if os.path.exists(logo_path):
     st.image(logo_path, use_container_width=True)
 else:
-    st.warning("Không tìm thấy file logo.png")
+    st.warning("Không tìm thấy file logo.png.png")
 
 # =========================================================
 # CSS
