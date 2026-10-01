@@ -12,7 +12,14 @@ st.set_page_config(
     page_icon="🧋",
     layout="centered"
 )
+import os
 
+logo_path = "logo.png"
+
+if os.path.exists(logo_path):
+    st.image(logo_path, use_container_width=True)
+else:
+    st.warning("Không tìm thấy file logo.png")
 
 # =========================================================
 # CSS
